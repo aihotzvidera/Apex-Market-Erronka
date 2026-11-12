@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX MARKET | Finantza-merkatuetan zure aliatua</title>
+  <meta name="description" content="APEX MARKET: merkatuen analisia, hezkuntza, tresna aurreratuak eta aholkularitza pertsonalizatua.">
+  <link rel="stylesheet" href="estiloak.css">
+</head>
+<body>
+  <a class="skip-link" href="#edukia">Joan eduki nagusira</a>
+
+  <!-- ============ MENUA ============ -->
+  <header>
+    <div class="container nav">
+      <a href="#hasiera" class="logo" data-scroll aria-label="APEX MARKET">
+        <img src="logo.png" alt="" width="38" height="40">
+        <span>APEX<small>MARKET</small></span>
+      </a>
+
+      <nav aria-label="Menu nagusia">
+        <ul class="menu" id="menu">
+        <li><a href="#hasiera" data-scroll class="active">Hasiera</a></li>
+        <li><a href="#guri-buruz" data-scroll>Guri buruz</a></li>
+        <li><a href="#zerbitzuak" data-scroll>Zerbitzuak</a></li>
+        <li><a href="#erreserba" data-scroll>Erreserba</a></li>
+        <li><a href="#iritziak" data-scroll>Iritziak</a></li>
+        <li><a href="#sortzaileak" data-scroll>Sortzaileak</a></li>
+        <li><a href="#kontaktua" data-scroll>Kontaktua</a></li>
+        <li><a href="trading-informazioa.html">Trading info</a></li>
+        <li><a href="psai.html">PSAI</a></li>
+      </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Gai iluna" aria-pressed="false"><span id="themeIcon">☀</span></button>
+        <a href="#erreserba" data-scroll class="btn btn-primary">Hasi orain →</a>
+        <button class="burger" id="burger" aria-label="Ireki menua" aria-expanded="false" aria-controls="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="edukia">
+    <!-- ============ BANNERRA ============ -->
+    <section id="hasiera" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Pentsatu zorrotz.<br>Egin tradinga <em>modu adimentsuan.</em></h1>
+          <p>Merkatuen analisia, tresna aurreratuak eta aholkularitza pertsonalizatua trader guztientzat.</p>
+          <div class="hero-btns">
+            <a href="#guri-buruz" data-scroll class="btn btn-primary">Ezagutu gehiago →</a>
+            <a href="#zerbitzuak" data-scroll class="btn btn-light">Gure zerbitzuak →</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="ico" aria-hidden="true">📊</span><div><strong>+1200</strong><small>Trader aktibo</small></div></div>
+            <div class="stat"><span class="ico" aria-hidden="true">⏰</span><div><strong>24/7</strong><small>Laguntza</small></div></div>
+            <div class="stat"><span class="ico" aria-hidden="true">📈</span><div><strong>+98%</strong><small>Pozik dauden bezeroak</small></div></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-head">
+            <div>
+              <div class="pair">NASDAQ 100 · NDX</div>
+              <div class="price"><span id="priceVal">$—</span><span class="chg" id="priceChg">+0.00%</span></div>
+            </div>
+            <div class="ranges" id="ranges">
+              <button class="active" data-r="1D">1D</button>
+              <button data-r="1W">1W</button>
+              <button data-r="1M">1M</button>
+              <button data-r="3M">3M</button>
+              <button data-r="1Y">1Y</button>
+              <button data-r="ALL">All</button>
+            </div>
+          </div>
+          <div class="chart-wrap" id="chartWrap">
+            <svg id="chart" viewBox="0 0 600 240" preserveAspectRatio="none" role="img" aria-label="NASDAQ 100 (NDX) kandela-grafikoa"></svg>
+            <div class="hl" id="hl"></div>
+            <div class="tip" id="tip"></div>
+          </div>
+          <div class="chart-foot">
+            <span><i class="dot"></i><span id="liveText">Konektatzen...</span></span>
+            <span id="updated">Datuak eguneratzen...</span>
+          </div>
+          <p class="tz-note" role="note">🕒 <strong>Kontuz, ordutegia New Yorkekoa da (ET).</strong> Grafikoko ordu guztiak New Yorkeko orduan daude, ez zure ordutegi lokalean. Prezio guztiak dolarretan ($) daude.<span id="nyClock"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INFORMAZIO OROKORRA ============ -->
+    <section id="guri-buruz">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Guri buruz</span>
+          <h2>Finantza-merkatuetan zure aliatua.</h2>
+          <p class="lead" style="margin-bottom:20px">APEX MARKET traderrei ezagutza, tresnak eta aholkularitza eskaintzeko sortu zen. Gure helburua zure erabakiak hobetzea eta zure emaitzak hobetzen laguntzea da.</p>
+          <div class="btn-row">
+            <a href="#zerbitzuak" data-scroll class="btn btn-primary">Gehiago jakin →</a>
+            <a href="psai.html" class="btn btn-light">Gure PSAI plana →</a>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="https://picsum.photos/seed/apex-laptop/800/600" alt="" loading="lazy">
+        </div>
+        <div class="features">
+          <div class="feature"><span class="ico" aria-hidden="true">🛡</span><div><h3>Gardentasuna</h3><p>Gardentasun osoz lan egiten dugu gure bezeroekin.</p></div></div>
+          <div class="feature"><span class="ico" aria-hidden="true">📊</span><div><h3>Esperientzia</h3><p>Urteetako esperientzia merkatu finantzarioetan.</p></div></div>
+          <div class="feature"><span class="ico" aria-hidden="true">👥</span><div><h3>Laguntza</h3><p>24/7 laguntza eta aholkularitza pertsonalizatua.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ZERBITZUAK ============ -->
+    <section id="zerbitzuak">
+      <div class="container">
+        <span class="eyebrow">Zerbitzuak</span>
+        <h2>Zer eskaintzen dizugu</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-head"><span class="ico" aria-hidden="true" style="background:#2457ff">📈</span><h3>Merkatuen analisia</h3></div>
+            <p>Egunero analisi tekniko eta fundamentala.</p>
+            <a href="#erreserba" data-scroll class="btn-link">Analisiaz galdetu →</a>
+          </article>
+          <article class="card">
+            <div class="card-head"><span class="ico" aria-hidden="true" style="background:#047857">🎓</span><h3>Hezkuntza</h3></div>
+            <p>Ikastaroak, bideoak eta webinar-ak trader guztientzat.</p>
+            <a href="trading-informazioa.html" class="btn-link">Trading informazioa →</a>
+          </article>
+          <article class="card">
+            <div class="card-head"><span class="ico" aria-hidden="true" style="background:#6d28d9">🛠</span><h3>Tresna aurreratuak</h3></div>
+            <p>Grafiko profesionalak, aderlazleak eta alertak denbora errealean.</p>
+            <a href="#erreserba" data-scroll class="btn-link">Tresnak ezagutu →</a>
+          </article>
+          <article class="card">
+            <div class="card-head"><span class="ico" aria-hidden="true" style="background:#b45309">🤝</span><h3>Aholkularitza</h3></div>
+            <p>Aholkularitza pertsonalizatua zure estrategia hobetzeko.</p>
+            <a href="#erreserba" data-scroll class="btn-link">Aholkularitza eskatu →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ERRESERBA ============ -->
+    <section id="erreserba">
+      <div class="container booking-grid">
+        <div>
+          <span class="eyebrow">Erreserba</span>
+          <h2>Hitzordua erreserbatu</h2>
+          <p class="lead">Aukeratu data eta ordua gure aholkularitzako aditu batekin hitz egiteko.</p>
+          <ul class="steps">
+            <li><span class="ico" aria-hidden="true">✔</span><div><strong>Eskuragarritasun eguneratua</strong><span>Ordutegiak denbora errealean eguneratzen dira.</span></div></li>
+            <li><span class="ico" aria-hidden="true">📅</span><div><strong>Erreserba erraza</strong><span>Aukeratu data eta ordua, bete formularioa.</span></div></li>
+            <li><span class="ico" aria-hidden="true">🔒</span><div><strong>Ziurtasuna</strong><span>Zure datuak seguru eta konfidentzialak dira.</span></div></li>
+          </ul>
+        </div>
+
+        <div class="booking-panels">
+          <div class="panel">
+            <div class="cal-head">
+              <button id="prevM" aria-label="Aurreko hilabetea">‹</button>
+              <strong id="calTitle"></strong>
+              <button id="nextM" aria-label="Hurrengo hilabetea">›</button>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+            <div class="legend">
+              <span><i style="background:var(--green)"></i>Eskuragarri</span>
+              <span><i style="background:var(--orange)"></i>Mugatua</span>
+              <span><i style="background:var(--muted)"></i>Ez dago eskuragarri</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Hautatu ordutegia</h3>
+            <p class="slots-msg" id="slotsMsg" role="status">Aukeratu lehenik egun bat egutegian.</p>
+            <div class="slots" id="slots"></div>
+          </div>
+
+          <div class="panel full-width">
+            <h3>Zure datuak</h3>
+            <form id="bookForm" novalidate>
+              <label for="bName">Izena</label>
+              <input id="bName" autocomplete="name" type="text" placeholder="Zure izena" required>
+              <label for="bEmail">Emaila</label>
+              <input id="bEmail" autocomplete="email" type="email" placeholder="zure@email.com" required>
+              <label for="bMsg">Mezua (aukerakoa)</label>
+              <textarea id="bMsg" placeholder="Idatzi hemen..."></textarea>
+              <div style="margin-top:14px"><button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Erreserba baieztatu →</button></div>
+              <div class="form-msg" id="bookMsg" role="status"></div>
+              <p class="small-note">Erreserba egin ondoren, baieztapen emaila jasoko duzu.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IRITZIAK ============ -->
+    <section id="iritziak">
+      <div class="container">
+        <span class="eyebrow">Iritziak</span>
+        <h2>Gure bezeroen iritziak</h2>
+        <div class="carousel" role="region" aria-roledescription="karrusela" aria-label="Bezeroen iritziak">
+          <div class="track" id="track">
+            <div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"APEX MARKET-ek nire trading-erabakiak hobetzen laguntzen dit. Oso gomendagarria!"</p><div class="who"><img src="https://i.pravatar.cc/80?img=12" alt="" loading="lazy"><div><strong>Jon Ander</strong><small>Trader aktiboa</small></div></div></div></div>
+            <div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"Tresna eta analisi zoragarriak. Laguntza-taldea ere bikaina da."</p><div class="who"><img src="https://i.pravatar.cc/80?img=47" alt="" loading="lazy"><div><strong>Maider E.</strong><small>Inbertitzailea</small></div></div></div></div>
+            <div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"Hezkuntza-sekzioak asko lagundu dit merkatuak hobeto ulertzen."</p><div class="who"><img src="https://i.pravatar.cc/80?img=33" alt="" loading="lazy"><div><strong>Iker P.</strong><small>Trader hasiberria</small></div></div></div></div>
+            <div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"Aholkularitza pertsonalizatuari esker, nire estrategia guztiz aldatu dut."</p><div class="who"><img src="https://i.pravatar.cc/80?img=5" alt="" loading="lazy"><div><strong>Amaia L.</strong><small>Trader aurreratua</small></div></div></div></div>
+          </div>
+          <div class="car-controls"><div class="dots" id="dots"></div><button type="button" class="car-pause" id="carPause">Gelditu iritziak</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SORTZAILEAK ============ -->
+    <section id="sortzaileak">
+      <div class="container">
+        <span class="eyebrow">Sortzaileak</span>
+        <h2>Webgune honen sortzaileak</h2>
+        <p class="lead">Proiektu hau Aihotz, Zuhair eta Julenek sortu dugu.</p>
+        <div class="team">
+          <div class="member"><div class="avatar">A</div><h3>Aihotz</h3><small>Sortzailea</small></div>
+          <div class="member"><div class="avatar">Z</div><h3>Zuhair</h3><small>Sortzailea</small></div>
+          <div class="member"><div class="avatar">J</div><h3>Julen</h3><small>Sortzailea</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKTUA ============ -->
+    <section id="kontaktua">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Kontaktua</span>
+          <h2>Jarri gurekin harremanetan</h2>
+          <p class="lead">Edozein galdera edo zalantza izanez gero, idatzi edo deitu lasai.</p>
+        </div>
+        <ul class="info-list">
+          <li><span class="ico" aria-hidden="true">✉</span><a href="mailto:info@apexmarket.com">info@apexmarket.com</a></li>
+          <li><span class="ico" aria-hidden="true">📞</span><a href="tel:+34686091704">+34 686 091 704</a></li>
+          <li><span class="ico" aria-hidden="true">📍</span><span>Alegia, Gipuzkoa</span></li>
+        </ul>
+        <form id="contactForm" novalidate>
+          <label for="cName">Izena</label>
+          <input id="cName" autocomplete="name" type="text" placeholder="Zure izena" required>
+          <label for="cEmail">Emaila</label>
+          <input id="cEmail" autocomplete="email" type="email" placeholder="zure@email.com" required>
+          <label for="cMsg">Mezua</label>
+          <textarea id="cMsg" placeholder="Idatzi zure mezua..." required></textarea>
+          <div style="margin-top:12px"><button class="btn btn-primary" type="submit">Mezua bidali →</button></div>
+          <div class="form-msg" id="contactMsg" role="status"></div>
+        </form>
+        <div class="social-box">
+          <h3>Gure sare sozialak</h3>
+          <p>Jarraitu gaitzazu azken berriak eta analisien berri izateko.</p>
+          <div class="socials">
+            <a href="https://twitter.com" target="_blank" rel="noopener" style="background:#0c5fa8" aria-label="Twitter (leiho berrian irekitzen da)">t</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="background:#0a66c2" aria-label="LinkedIn (leiho berrian irekitzen da)">in</a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" style="background:#b91c1c" aria-label="YouTube (leiho berrian irekitzen da)">▶</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" style="background:linear-gradient(45deg,#b45309,#be185d,#6d28d9)" aria-label="Instagram (leiho berrian irekitzen da)">◎</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="logo" style="color:#fff;margin-bottom:12px"><img src="logo.png" alt="" width="38" height="40"><span>APEX<small>MARKET</small></span></div>
+          <p>Finantza-merkatuetan ezagutza, tresnak eta aholkularitza eskaintzen duen enpresa liderra.</p>
+        </div>
+        <div>
+          <h3 class="foot-title">Link azkarrak</h3>
+          <ul>
+            <li><a href="#hasiera" data-scroll>Hasiera</a></li>
+            <li><a href="#guri-buruz" data-scroll>Guri buruz</a></li>
+            <li><a href="#zerbitzuak" data-scroll>Zerbitzuak</a></li>
+            <li><a href="#erreserba" data-scroll>Erreserba</a></li>
+            <li><a href="#iritziak" data-scroll>Iritziak</a></li>
+            <li><a href="#kontaktua" data-scroll>Kontaktua</a></li>
+            <li><a href="trading-informazioa.html">Trading informazioa</a></li>
+            <li><a href="psai.html">PSAI plana</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="foot-title">Zerbitzuak</h3>
+          <ul>
+            <li><a href="#zerbitzuak" data-scroll>Merkatuen analisia</a></li>
+            <li><a href="#zerbitzuak" data-scroll>Hezkuntza</a></li>
+            <li><a href="#zerbitzuak" data-scroll>Tresna aurreratuak</a></li>
+            <li><a href="#zerbitzuak" data-scroll>Aholkularitza</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="foot-title">Laguntza</h3>
+          <ul>
+            <li><a href="#kontaktua" data-scroll>Ohiko galderak</a></li>
+            <li><a href="#kontaktua" data-scroll>Baldintzak</a></li>
+            <li><a href="#kontaktua" data-scroll>Pribatutasun politika</a></li>
+            <li><a href="#kontaktua" data-scroll>Lege oharra</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="foot-title">Harpidetu zaitez</h3>
+          <p>Jaso azken analisiak eta berriak email bidez.</p>
+          <form class="news" id="newsForm" novalidate>
+            <input id="nEmail" autocomplete="email" type="email" placeholder="Zure emaila" aria-label="Zure emaila">
+            <button type="submit" aria-label="Harpidetu">→</button>
+          </form>
+          <p id="newsMsg" style="margin-top:8px"></p>
+        </div>
+      </div>
+      <div class="copy">© 2025 Apex Market. Eskubide guztiak gordeta.</div>
+    </div>
+  </footer>
+
+  <button id="topBtn" aria-label="Joan gora">↑</button>
+
+  <!-- Modala: erreserba baieztapena (orria utzi gabe) -->
+  <div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="big">✅</div>
+      <h3 id="modalTitle">Erreserba egina!</h3>
+      <p id="modalText"></p>
+      <button class="btn btn-primary" id="modalClose" type="button">Ados</button>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+    var $ = function (s, r) { return (r || document).querySelector(s); };
+    var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+    var validEmail = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); };
+
+    /* ---------- NABIGAZIOA: scroll leuna, atzera botoia erabili gabe ---------- */
+    function goTo(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var top = el.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 72;
+      try { window.scrollTo({ top: top, behavior: 'smooth' }); }
+      catch (e) { window.scrollTo(0, top); }
+    }
+    $$('[data-scroll]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();               // ez da historia berririk sortzen
+        goTo(a.getAttribute('href').slice(1));
+        $('#menu').classList.remove('open'); $('#burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+    $('#burger').addEventListener('click', function () { var o = $('#menu').classList.toggle('open'); this.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+
+    /* Scroll-spy + goira joateko botoia */
+    var sections = $$('main section');
+    var links = $$('.menu a');
+    function onScroll() {
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      var current = sections[0].id;
+      sections.forEach(function (s) { if (s.offsetTop - 120 <= y) current = s.id; });
+      links.forEach(function (l) { var on = l.getAttribute('href') === '#' + current; l.classList.toggle('active', on); if (on) { l.setAttribute('aria-current', 'true'); } else { l.removeAttribute('aria-current'); } });
+      $('#topBtn').classList.toggle('show', y > 500);
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    $('#topBtn').addEventListener('click', function () { goTo('hasiera'); });
+
+    /* ---------- GAI ARGIA / ILUNA ---------- */
+    var root = document.documentElement;
+    function setTheme(t) {
+      root.setAttribute('data-theme', t);
+      $('#themeIcon').textContent = t === 'dark' ? '☾' : '☀';
+      $('#themeToggle').setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+      try { localStorage.setItem('apex-theme', t); } catch (e) {}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('apex-theme'); } catch (e) {}
+    setTheme(saved || 'light');
+    $('#themeToggle').addEventListener('click', function () {
+      setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    /* ---------- GRAFIKOA: NASDAQ 100 (NDX) · New Yorkeko ordutegia (ET) · dolarrak ($) ---------- */
+    var NY_TZ = 'America/New_York';
+    var seedBase = 7;
+    var chartData = [], chartRange = '1D', liveData = null, reqId = 0;
+    var tip = $('#tip'), hl = $('#hl'), svgEl = $('#chart'), wrapEl = $('#chartWrap');
+
+    function rng(seed) { var s = seed; return function () { s = (s * 9301 + 49297) % 233280; return s / 233280; }; }
+    function money(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+
+    /* Ordu guztiak New Yorkeko ordutegian */
+    var nyFmt = null;
+    try {
+      nyFmt = new Intl.DateTimeFormat('en-GB', {
+        timeZone: NY_TZ, year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'
+      });
+    } catch (e) { nyFmt = null; }
+    function nyParts(t) {
+      var o = {};
+      if (nyFmt) {
+        nyFmt.formatToParts(new Date(t)).forEach(function (p) { o[p.type] = p.value; });
+      } else {                                     // ordezko sinplea (UTC-5)
+        var d = new Date(t - 5 * 3600000), z = function (n) { return (n < 10 ? '0' : '') + n; };
+        o = { year: d.getUTCFullYear(), month: z(d.getUTCMonth() + 1), day: z(d.getUTCDate()), hour: z(d.getUTCHours()), minute: z(d.getUTCMinutes()), second: z(d.getUTCSeconds()) };
+      }
+      if (o.hour === '24') o.hour = '00';
+      return o;
+    }
+    function fmtDate(t) {
+      var p = nyParts(t);
+      var s = p.year + '/' + p.month + '/' + p.day;
+      if (chartRange === '1D' || chartRange === '1W') s += '  ' + p.hour + ':' + p.minute + ' ET';
+      return s;
+    }
+    function updateNyClock() {
+      var p = nyParts(Date.now());
+      var wd = new Date(Date.UTC(+p.year, +p.month - 1, +p.day)).getUTCDay();     // 0 = igandea
+      var mins = (+p.hour) * 60 + (+p.minute);
+      var open = wd >= 1 && wd <= 5 && mins >= 570 && mins < 960;                   // 9:30 - 16:00 ET
+      $('#nyClock').textContent = 'New York orain: ' + p.hour + ':' + p.minute + ':' + p.second + ' ET · Merkatua ' + (open ? 'irekita' : 'itxita');
+    }
+    updateNyClock();
+    setInterval(updateNyClock, 1000);
+
+    /* Simulazioa (datu errealik lortu ezin bada bakarrik) */
+    function buildData(range) {
+      var hash = 0;
+      for (var s = 0; s < range.length; s++) { hash = hash * 31 + range.charCodeAt(s); }
+      var r = rng(seedBase + hash);
+      var stepMs = { '1D': 900000, '1W': 3600000, '1M': 86400000, '3M': 86400000, '1Y': 604800000, 'ALL': 7776000000 }[range] || 3600000;
+      var vol = { '1D': 40, '1W': 90, '1M': 250, '3M': 320, '1Y': 700, 'ALL': 1500 }[range] || 100;
+      var candles = [], prev = 25000, n = 40, t0 = Date.now() - n * stepMs;
+      for (var i = 0; i < n; i++) {
+        var o = prev;
+        var c = o + (r() - 0.46) * vol;
+        var h = Math.max(o, c) + r() * vol * 0.5;
+        var l = Math.min(o, c) - r() * vol * 0.5;
+        candles.push({ t: t0 + i * stepMs, o: o, c: c, h: h, l: l });
+        prev = c;
+      }
+      return candles;
+    }
+
+    function drawChart(range) {
+      var data = liveData || buildData(range);
+      if (!data.length) return;
+      chartData = data; chartRange = range;
+      var svg = svgEl;
+      var W = 600, H = 240, pad = 14;
+      var min = Infinity, max = -Infinity;
+      data.forEach(function (k) { if (k.l < min) min = k.l; if (k.h > max) max = k.h; });
+      var step = (W - pad * 2) / data.length;
+      var bw = step * 0.6;
+      function Y(v) { return H - pad - ((v - min) / (max - min || 1)) * (H - pad * 2); }
+      var grid = '';
+      for (var g = 1; g < 5; g++) { var gy = (H / 5) * g; grid += '<line x1="0" x2="' + W + '" y1="' + gy + '" y2="' + gy + '" stroke="currentColor" opacity=".08"/>'; }
+      var candles = '';
+      data.forEach(function (k, i) {
+        var x = pad + i * step + step / 2;
+        var up = k.c >= k.o;
+        var col = up ? '#16a34a' : '#ef4444';
+        var top = Y(Math.max(k.o, k.c)), bot = Y(Math.min(k.o, k.c));
+        var bh = Math.max(bot - top, 1.5);
+        candles += '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + Y(k.h).toFixed(1) + '" y2="' + Y(k.l).toFixed(1) + '" stroke="' + col + '" stroke-width="1.4" vector-effect="non-scaling-stroke"/>' +
+                   '<rect x="' + (x - bw / 2).toFixed(1) + '" y="' + top.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + bh.toFixed(1) + '" fill="' + col + '" rx="1"/>';
+      });
+      svg.innerHTML = grid + candles;
+      var last = data[data.length - 1].c, first = data[0].o;
+      var pct = ((last - first) / first) * 100;
+      $('#priceVal').textContent = money(last);
+      var chg = $('#priceChg');
+      chg.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%';
+      chg.className = 'chg' + (pct < 0 ? ' down' : '');
+      var p = nyParts(Date.now());
+      $('#updated').textContent = 'Eguneratua: ' + p.hour + ':' + p.minute + ':' + p.second + ' ET';
+    }
+
+    /* ---------- DATU ERREALAK: NASDAQ 100 (^NDX) Yahoo Finance bidez ---------- */
+    var RANGES = { '1D': ['1d', '15m'], '1W': ['5d', '1h'], '1M': ['1mo', '1d'], '3M': ['3mo', '1d'], '1Y': ['1y', '1wk'], 'ALL': ['max', '3mo'] };
+    var YF = 'https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX';
+    var PROXIES = [
+      function (u) { return u; },
+      function (u) { return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u); },
+      function (u) { return 'https://corsproxy.io/?' + encodeURIComponent(u); }
+    ];
+    var proxyIdx = 0;
+
+    function setStatus(state) {
+      var txt = { live: 'NASDAQ 100 (NDX) zuzenean · Yahoo Finance', sim: 'Simulazioa (ezin izan da datu errealetara konektatu)', loading: 'Datuak kargatzen...' }[state];
+      $('#liveText').textContent = txt;
+      $('.dot').style.background = state === 'live' ? 'var(--green)' : 'var(--orange)';
+    }
+    function withTimeout(ms, p) {
+      return new Promise(function (res, rej) {
+        var t = setTimeout(function () { rej(new Error('timeout')); }, ms);
+        p.then(function (v) { clearTimeout(t); res(v); }, function (e) { clearTimeout(t); rej(e); });
+      });
+    }
+    function fetchJson(url, n) {
+      if (typeof fetch === 'undefined' || n >= PROXIES.length) return Promise.reject(new Error('fail'));
+      var i = (proxyIdx + n) % PROXIES.length;
+      return withTimeout(7000, fetch(PROXIES[i](url)).then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); }))
+        .then(function (j) { if (!j || !j.chart || !j.chart.result) throw new Error('bad'); proxyIdx = i; return j; })
+        .catch(function () { return fetchJson(url, n + 1); });
+    }
+    function parseYahoo(j) {
+      var r = j.chart.result[0], q = r.indicators.quote[0], t = r.timestamp || [], out = [];
+      for (var i = 0; i < t.length; i++) {
+        if (q.open[i] == null || q.high[i] == null || q.low[i] == null || q.close[i] == null) continue;
+        out.push({ t: t[i] * 1000, o: q.open[i], h: q.high[i], l: q.low[i], c: q.close[i] });
+      }
+      return out.length > 120 ? out.slice(out.length - 120) : out;
+    }
+    function loadRange(range) {
+      var id = ++reqId, c = RANGES[range];
+      fetchJson(YF + '?range=' + c[0] + '&interval=' + c[1], 0).then(function (j) {
+        if (id !== reqId) return;
+        var d = parseYahoo(j);
+        if (!d.length) throw new Error('empty');
+        liveData = d; setStatus('live'); drawChart(range);
+      }).catch(function () {
+        if (id !== reqId) return;
+        if (!liveData) { setStatus('sim'); drawChart(range); }     // datu errealak ez badaude: simulazioa
+      });
+    }
+    function activeRange() { return $('#ranges .active').getAttribute('data-r'); }
+
+    $$('#ranges button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $$('#ranges button').forEach(function (x) { x.classList.remove('active'); });
+        b.classList.add('active');
+        liveData = null; svgEl.innerHTML = ''; hideTip(); setStatus('loading');
+        loadRange(b.getAttribute('data-r'));
+      });
+    });
+
+    /* ---------- KANDELA BAT GAINEAN: DATA ETA GANANTZIA/GALERA % ---------- */
+    function hideTip() { tip.style.display = 'none'; hl.style.display = 'none'; }
+    function showTip(clientX, clientY) {
+      if (!chartData.length) return;
+      var rect = svgEl.getBoundingClientRect();
+      var wrap = wrapEl.getBoundingClientRect();
+      var pad = 14, W = 600;
+      var step = (W - pad * 2) / chartData.length;
+      var i = Math.floor(((clientX - rect.left) / rect.width * W - pad) / step);
+      if (i < 0 || i >= chartData.length) { hideTip(); return; }
+      var k = chartData[i];
+      var pct = ((k.c - k.o) / k.o) * 100;
+      var up = pct >= 0;
+      tip.innerHTML =
+        '<strong>' + fmtDate(k.t) + '</strong>' +
+        '<span class="pct ' + (up ? 'up' : 'down') + '">' + (up ? '▲ +' : '▼ ') + pct.toFixed(2) + '% ' + (up ? '(irabazia)' : '(galera)') + '</span>' +
+        '<small>Irekiera: ' + money(k.o) + ' · Itxiera: ' + money(k.c) + '</small>' +
+        '<small>Gorena: ' + money(k.h) + ' · Behekoena: ' + money(k.l) + '</small>';
+      tip.style.display = 'block';
+      var left = clientX - wrap.left + 16;
+      if (left + tip.offsetWidth > wrap.width) left = clientX - wrap.left - tip.offsetWidth - 16;
+      if (left < 0) left = 0;
+      var top = clientY - wrap.top - tip.offsetHeight - 12;
+      if (top < 0) top = clientY - wrap.top + 16;
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+      hl.style.display = 'block';
+      hl.style.left = (rect.left - wrap.left + ((pad + i * step) / W) * rect.width) + 'px';
+      hl.style.width = ((step / W) * rect.width) + 'px';
+      hl.style.top = svgEl.offsetTop + 'px';
+      hl.style.height = svgEl.offsetHeight + 'px';
+    }
+    svgEl.addEventListener('mousemove', function (e) { showTip(e.clientX, e.clientY); });
+    svgEl.addEventListener('mouseleave', hideTip);
+    svgEl.addEventListener('touchstart', function (e) { var t = e.touches[0]; showTip(t.clientX, t.clientY); }, { passive: true });
+    svgEl.addEventListener('touchmove', function (e) { var t = e.touches[0]; showTip(t.clientX, t.clientY); }, { passive: true });
+    svgEl.addEventListener('touchend', function () { setTimeout(hideTip, 1500); });
+
+    setStatus('loading');
+    loadRange('1D');
+    setInterval(function () { loadRange(activeRange()); }, 15000);     // 15 segundoro eguneratu
+
+    /* ---------- EGUTEGIA + ORDUTEGIAK ---------- */
+    var months = ['Urtarrila', 'Otsaila', 'Martxoa', 'Apirila', 'Maiatza', 'Ekaina', 'Uztaila', 'Abuztua', 'Iraila', 'Urria', 'Azaroa', 'Abendua'];
+    var wdays = ['Al', 'As', 'Az', 'Og', 'Or', 'Lr', 'Ig'];
+    var hours = ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'];
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var view = new Date(today.getFullYear(), today.getMonth(), 1);
+    var selDate = null, selSlot = null;
+    var booked = {};   // 'YYYY-MM-DD|HH:MM' -> true
+
+    function key(d) { return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
+    function slotStatus(d, h, i) {
+      if (booked[key(d) + '|' + h]) return 'full';
+      var n = (d.getDate() * 7 + d.getMonth() * 3 + i * 11) % 10;
+      if (n < 5) return 'free';
+      if (n < 8) return 'few';
+      return 'full';
+    }
+    function isWorkday(d) { var w = d.getDay(); return w !== 0 && w !== 6; }
+
+    function renderCalendar() {
+      $('#calTitle').textContent = months[view.getMonth()] + ' ' + view.getFullYear();
+      var grid = $('#calGrid'); grid.innerHTML = '';
+      wdays.forEach(function (w) { var s = document.createElement('div'); s.className = 'wd'; s.textContent = w; grid.appendChild(s); });
+      var first = new Date(view.getFullYear(), view.getMonth(), 1);
+      var offset = (first.getDay() + 6) % 7;
+      var start = new Date(first); start.setDate(1 - offset);
+      for (var i = 0; i < 42; i++) {
+        var d = new Date(start); d.setDate(start.getDate() + i);
+        var other = d.getMonth() !== view.getMonth();
+        if (other) { var sp = document.createElement('span'); sp.setAttribute('aria-hidden', 'true'); grid.appendChild(sp); continue; }
+        var b = document.createElement('button');
+        b.type = 'button'; b.textContent = d.getDate();
+        b.setAttribute('aria-label', d.getDate() + ' ' + months[d.getMonth()].toLowerCase() + ' ' + d.getFullYear());
+        if (d.getTime() === today.getTime()) b.classList.add('today');
+        var isSel = selDate && key(d) === key(selDate);
+        if (isSel) b.classList.add('selected');
+        b.setAttribute('aria-pressed', isSel ? 'true' : 'false');
+        if (d < today || !isWorkday(d)) b.disabled = true;
+        (function (dd) { b.addEventListener('click', function () { selDate = dd; selSlot = null; renderCalendar(); renderSlots(); }); })(d);
+        grid.appendChild(b);
+      }
+    }
+    function renderSlots() {
+      var box = $('#slots'); box.innerHTML = '';
+      if (!selDate) { $('#slotsMsg').textContent = 'Aukeratu lehenik egun bat egutegian.'; return; }
+      $('#slotsMsg').textContent = selDate.getDate() + ' ' + months[selDate.getMonth()].toLowerCase() + 'ko ordutegiak:';
+      hours.forEach(function (h, i) {
+        var st = slotStatus(selDate, h, i);
+        var b = document.createElement('button');
+        b.type = 'button'; b.textContent = h; b.className = 'slot ' + st;
+        if (st === 'full') b.disabled = true;
+        if (selSlot === h) b.classList.add('chosen');
+        b.setAttribute('aria-pressed', selSlot === h ? 'true' : 'false');
+        if (st === 'full') b.setAttribute('aria-label', h + ' (ez dago eskuragarri)');
+        if (st === 'few') b.setAttribute('aria-label', h + ' (leku gutxi geratzen dira)');
+        b.addEventListener('click', function () { selSlot = h; renderSlots(); });
+        box.appendChild(b);
+      });
+    }
+    $('#prevM').addEventListener('click', function () {
+      var p = new Date(view.getFullYear(), view.getMonth() - 1, 1);
+      if (p >= new Date(today.getFullYear(), today.getMonth(), 1)) { view = p; renderCalendar(); }
+    });
+    $('#nextM').addEventListener('click', function () { view = new Date(view.getFullYear(), view.getMonth() + 1, 1); renderCalendar(); });
+    renderCalendar(); renderSlots();
+
+    function showMsg(el, type, text) { el.className = 'form-msg ' + type; el.textContent = text; }
+
+    $('#bookForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var msg = $('#bookMsg');
+      var name = $('#bName').value.trim(), email = $('#bEmail').value.trim();
+      if (!selDate || !selSlot) return showMsg(msg, 'error', 'Aukeratu data eta ordua egutegian.');
+      if (name.length < 2) return showMsg(msg, 'error', 'Idatzi zure izena.');
+      if (!validEmail(email)) return showMsg(msg, 'error', 'Email baliozkoa idatzi, mesedez.');
+      booked[key(selDate) + '|' + selSlot] = true;
+      var txt = name + ', zure hitzordua ' + selDate.getDate() + ' ' + months[selDate.getMonth()].toLowerCase() + 'ean, ' + selSlot + 'etan geratu da. Baieztapena ' + email + ' helbidera bidaliko dugu.';
+      $('#modalText').textContent = txt;
+      lastFocus = document.activeElement; $('#modalBg').classList.add('open'); $('#modalClose').focus();
+      showMsg(msg, 'ok', 'Erreserba baieztatuta.');
+      selSlot = null; renderSlots();
+      $('#bookForm').reset();
+    });
+    var lastFocus = null;
+    function closeModal() { $('#modalBg').classList.remove('open'); if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+    $('#modalClose').addEventListener('click', closeModal);
+    $('#modalBg').addEventListener('click', function (e) { if (e.target === this) closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' || e.keyCode === 27) closeModal(); });
+
+    /* ---------- IRITZIEN KARRUSELA ---------- */
+    var slides = $$('#track .slide'), idx = 0, timer;
+    function perView() { var w = window.innerWidth; return w <= 640 ? 1 : (w <= 1000 ? 2 : 3); }
+    function pages() { return Math.max(1, slides.length - perView() + 1); }
+    function renderDots() {
+      var d = $('#dots'); d.innerHTML = '';
+      for (var i = 0; i < pages(); i++) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.setAttribute('aria-label', (i + 1) + '. iritzia');
+        if (i === idx) b.className = 'active';
+        (function (n) { b.addEventListener('click', function () { show(n); restart(); }); })(i);
+        d.appendChild(b);
+      }
+    }
+    function show(n) {
+      idx = (n + pages()) % pages();
+      $('#track').style.transform = 'translateX(-' + (idx * (100 / perView())) + '%)';
+      renderDots();
+    }
+    var paused = false, reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    function restart() { clearInterval(timer); if (paused || reduce) return; timer = setInterval(function () { show(idx + 1); }, 5000); }
+    window.addEventListener('resize', function () { show(Math.min(idx, pages() - 1)); });
+    var pb = $('#carPause'), car = $('.carousel');
+    if (reduce) paused = true;
+    function syncPause() { pb.textContent = paused ? 'Jarraitu iritziak' : 'Gelditu iritziak'; }
+    pb.addEventListener('click', function () { paused = !paused; syncPause(); restart(); });
+    car.addEventListener('mouseenter', function () { clearInterval(timer); });
+    car.addEventListener('mouseleave', restart);
+    car.addEventListener('focusin', function () { clearInterval(timer); });
+    car.addEventListener('focusout', restart);
+    syncPause();
+    show(0); restart();
+
+    /* ---------- KONTAKTU ETA NEWSLETTER FORMULARIOAK ---------- */
+    $('#contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var m = $('#contactMsg');
+      if ($('#cName').value.trim().length < 2) return showMsg(m, 'error', 'Idatzi zure izena.');
+      if (!validEmail($('#cEmail').value.trim())) return showMsg(m, 'error', 'Email baliozkoa idatzi, mesedez.');
+      if ($('#cMsg').value.trim().length < 5) return showMsg(m, 'error', 'Idatzi zure mezua.');
+      showMsg(m, 'ok', 'Eskerrik asko! Mezua jaso dugu, laster erantzungo dizugu.');
+      this.reset();
+    });
+    $('#newsForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var m = $('#newsMsg');
+      if (!validEmail($('#nEmail').value.trim())) { m.textContent = 'Email baliogabea.'; return; }
+      m.textContent = 'Harpidetza eginda. Eskerrik asko!';
+      this.reset();
+    });
+  })();
+  </script>
+</body>
+</html>
